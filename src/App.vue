@@ -3,6 +3,7 @@ import AppTitle from './components/AppTitle.vue'
 import AppTitleCarousel from './components/AppTitleCarousel.vue';
 import AppSection0 from './components/AppSection0.vue';
 import AppSection1 from './components/AppSection1.vue';
+import AppSection2 from './components/AppSection2.vue';
 
 export default {
   components: {
@@ -10,6 +11,7 @@ export default {
     AppTitleCarousel,
     AppSection0,
     AppSection1,
+    AppSection2,
   },
 }
 </script>
@@ -23,6 +25,7 @@ export default {
   <main>
     <AppSection0 />
     <AppSection1 />
+    <AppSection2 />
   </main>
   <footer>
 
