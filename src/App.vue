@@ -26,7 +26,7 @@ export default {
 </template>
 
 <style scoped>
-header {
+AppTitle {
   background: rgba(218, 108, 110, 0.8);
 }
 </style>

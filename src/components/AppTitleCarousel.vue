@@ -24,6 +24,14 @@ export default {
             </div>
         </div>
     </div>
+    <div class="positionText position-absolute text-center">
+        <h2 class="text-white mb-4">Key to your success</h2>
+        <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem iste illum maxime? Facilis
+            tempora delectus,
+            earum eos iure deleniti deserunt, optio nihil dolore laboriosam rerum? Molestiae non quos rerum amet.</p>
+        <button class="p-3 m-5 text-white colorButton">Search Courses</button>
+        <button class="p-3 textButton">Apply for University</button>
+    </div>
 </template>
 
 <style scoped>
@@ -44,5 +52,25 @@ export default {
     height: 100%;
     background: rgba(218, 108, 110, 0.6);
     /* Colore dello sfondo con opacità */
+}
+
+.positionText {
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.colorButton {
+    background-color: #E9D758;
+    border-radius: 30px;
+    border-color: #E9D758;
+    border: 0px;
+}
+
+.textButton {
+    color: #E56768;
+    border-radius: 30px;
+    border-color: #E56768;
+    border: 0px;
 }
 </style>
