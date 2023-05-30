@@ -1,12 +1,15 @@
 <script >
 import AppTitle from './components/AppTitle.vue'
 import AppTitleCarousel from './components/AppTitleCarousel.vue';
-import { headerLink } from './data/store';
+import AppSection0 from './components/AppSection0.vue';
+import AppSection1 from './components/AppSection1.vue';
 
 export default {
   components: {
     AppTitle,
-    AppTitleCarousel
+    AppTitleCarousel,
+    AppSection0,
+    AppSection1,
   },
 }
 </script>
@@ -18,7 +21,8 @@ export default {
     <AppTitleCarousel />
   </header>
   <main>
-
+    <AppSection0 />
+    <AppSection1 />
   </main>
   <footer>
 
