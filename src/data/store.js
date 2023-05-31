@@ -57,3 +57,32 @@ export const Main = reactive({
         }
     ]
 })
+
+export const MainSection5 = reactive({
+    imagePartners: [
+        {
+            imgPath: "../src/assets/img/partner-2.png",
+        },
+        {
+            imgPath: "../src/assets/img/partner-3.png",
+        },
+        {
+            imgPath: "../src/assets/img/partner-4.png",
+        },
+        {
+            imgPath: "../src/assets/img/partner-5.png",
+        },
+        {
+            imgPath: "../src/assets/img/partner-6.png",
+        },
+        {
+            imgPath: "../src/assets/img/partner-8.png",
+        },
+        {
+            imgPath: "../src/assets/img/partner-1.png",
+        },
+        {
+            imgPath: "../src/assets/img/partner-7.png",
+        }
+    ]
+})
