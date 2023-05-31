@@ -11,7 +11,7 @@ export default {
 </script>
 
 <template>
-    <div class=" container containerMain d-flex flex-column align-items-center mb-2">
+    <div class=" container containerMain d-flex flex-column align-items-center marginContainer">
         <h2 class="mb-2">Faculties available at EduPrime</h2>
         <p class="text-center textSecondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis recusandae
             ipsam quidem sapiente necessitatibus!</p>
@@ -41,6 +41,10 @@ export default {
 <style scoped>
 .containerMain {
     margin: 0 auto;
+}
+
+.marginContainer {
+    margin-bottom: 400px;
 }
 
 .textSecondary {
