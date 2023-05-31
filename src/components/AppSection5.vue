@@ -29,6 +29,7 @@ export default {
 .containerMain {
     margin: 0 auto;
     margin-top: 100px;
+    margin-bottom: 250px;
 }
 
 li img {

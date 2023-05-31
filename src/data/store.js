@@ -86,3 +86,68 @@ export const MainSection5 = reactive({
         }
     ]
 })
+
+export const FooterGet = reactive({
+    voices: [
+        {
+            text: "Request a website",
+        },
+        {
+            text: "Browse Themes",
+        },
+        {
+            text: "Payment options",
+        },
+        {
+            text: "Support System",
+        },
+        {
+            text: "Checkout",
+        },
+        {
+            text: "Purxhase Theme",
+        }
+    ],
+    voicesText: [
+        {
+            text: "Purchase theme",
+        },
+        {
+            text: "Our Benefits",
+        },
+        {
+            text: "Our Team",
+        },
+        {
+            text: "Our Services",
+        },
+        {
+            text: "Other Products",
+        },
+        {
+            text: "My account",
+        }
+    ],
+    links: [
+        {
+            text: "ECONOMY",
+        },
+        {
+            text: "ECONOMY",
+        },
+        {
+            text: "ECONOMY",
+        },
+        {
+            text: "ECONOMY",
+        },
+        {
+            text: "ECONOMY",
+        },
+        {
+            text: "ECONOMY",
+        }, {
+            text: "ECONOMY",
+        },
+    ]
+})
