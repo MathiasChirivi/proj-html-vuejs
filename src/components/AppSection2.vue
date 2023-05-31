@@ -42,7 +42,7 @@ export default {
                     <div class="card h-100">
                         <div class="card-body">
                             <h3 class="card-title text-center">Coaching Session</h3>
-                            <div class="d-flex justify-content-center">
+                            <div class="d-flex align-items-center justify-content-center">
                                 <font-awesome-icon :icon="['fas', 'calendar-days']" />
                                 <p class="m-0 mx-2">20 May 21:30 PM</p>
                             </div>
@@ -74,7 +74,7 @@ export default {
                     <div class="card heightBody">
                         <div class="card-body">
                             <h3 class="card-title text-center">Coaching Session</h3>
-                            <div class="d-flex justify-content-center">
+                            <div class="d-flex align-items-center justify-content-center">
                                 <font-awesome-icon :icon="['fas', 'calendar-days']" />
                                 <p class="m-0 mx-2">20 May 21:30 PM</p>
                             </div>
