@@ -115,7 +115,6 @@ export default {
 
 <style scoped>
 .containerMain {
-    height: 500px;
     margin: 0 auto;
     margin-top: 100px;
 }
