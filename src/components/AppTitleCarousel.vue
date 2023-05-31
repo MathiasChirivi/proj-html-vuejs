@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleSlidesOnly" class=" position-relative carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <div class="containerCarousel">
@@ -23,6 +23,7 @@ export default {
                 </div>
             </div>
         </div>
+        <img class="position-absolute positionImg" src="../assets/img/Wave-1.png" alt="">
     </div>
     <div class="positionText position-absolute text-center">
         <h2 class="text-white mb-4">Key to your success</h2>
@@ -35,8 +36,17 @@ export default {
 </template>
 
 <style scoped>
+#carouselExampleSlidesOnly {
+    margin-top: -120px;
+}
+
 .heightCarousel {
     height: 700px;
+}
+
+.positionImg {
+    top: 600px;
+    width: 100%;
 }
 
 .containerCarousel {
@@ -50,7 +60,7 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(218, 108, 110, 0.6);
+    background: rgba(218, 108, 110, 0.8);
     /* Colore dello sfondo con opacità */
 }
 

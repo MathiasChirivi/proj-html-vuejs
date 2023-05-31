@@ -28,7 +28,9 @@ export default {
 
 <style scoped>
 .headerBg {
-    background: rgba(218, 108, 110, 0.8);
+    background: #00000000;
+    position: relative;
+    z-index: 999999;
 }
 
 .containerHeader {

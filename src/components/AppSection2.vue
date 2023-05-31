@@ -101,11 +101,13 @@ export default {
 }
 
 .positionImg {
-    top: -186px;
+    top: -119px;
+    width: 100%;
 }
 
 .positionImg1 {
-    bottom: -176px;
+    bottom: -118px;
+    width: 100%;
 }
 
 .containerMain {

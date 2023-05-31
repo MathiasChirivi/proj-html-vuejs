@@ -44,7 +44,7 @@ export default {
 }
 
 .marginContainer {
-    margin-bottom: 400px;
+    margin-bottom: 220px;
 }
 
 .textSecondary {
