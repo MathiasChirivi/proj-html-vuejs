@@ -6,7 +6,7 @@ export default {
 </script>
 
 <template>
-    <div class=" container containerMain mt-5 mb-2">
+    <div class=" container containerMain ">
         <h2 class="mb-5">Latest Courses</h2>
         <div class="d-flex">
             <div class="col">
@@ -86,7 +86,30 @@ export default {
                 </div>
             </div>
         </div>
-
+        <div class="container containerMainAfter d-flex ">
+            <div class="left d-flex flex-column justify-content-center">
+                <h2 class="mb-5">The most efficient examination method</h2>
+                <p class="w-75 mb-5">EduPrime has gathered teachers from around the globe to brainstorm in order to
+                    facilitate the evaluation of our students. Every teacher from our university has an influence on how
+                    students are evaluated at his/her subject.</p>
+                <button class=" buttonMain text-white">Discover the Method</button>
+            </div>
+            <div class="right d-flex flex-column justify-content-center">
+                <img src="../assets/img/Exam-Illustration.png" alt="">
+            </div>
+        </div>
+        <div class="container containerMainAfter d-flex ">
+            <div class="left d-flex flex-column justify-content-center">
+                <img src="../assets/img/Girl-Illustration.png" alt="">
+            </div>
+            <div class="right d-flex flex-column justify-content-center">
+                <h2 class="mb-5">Variable fees for international students</h2>
+                <p class="w-75 mb-5">EduPrime has gathered teachers from around the globe to brainstorm in order to
+                    facilitate the evaluation of our students. Every teacher from our university has an influence on how
+                    students are evaluated at his/her subject.</p>
+                <button class=" buttonMain text-white">List of fees</button>
+            </div>
+        </div>
     </div>
 </template>
 
@@ -94,6 +117,11 @@ export default {
 .containerMain {
     height: 500px;
     margin: 0 auto;
+    margin-top: 100px;
+}
+
+.containerMainAfter {
+    margin-top: 150px;
 }
 
 .widthCard {
@@ -110,5 +138,31 @@ export default {
     border: 0;
     background-color: #E56768;
     border-radius: 30px;
+}
+
+.buttonMain {
+    padding: 13px;
+    border-radius: 30px;
+    border: 0px;
+    background-color: #E56768;
+    width: 200px;
+}
+
+.left {
+    width: calc(100% / 2);
+    height: 500px;
+}
+
+.left img {
+    width: 80%;
+}
+
+.right img {
+    width: 80%;
+}
+
+.right {
+    width: calc(100% / 2);
+    height: 500px;
 }
 </style>
