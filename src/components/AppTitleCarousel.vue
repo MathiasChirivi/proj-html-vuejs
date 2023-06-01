@@ -30,8 +30,12 @@ export default {
         <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem iste illum maxime? Facilis
             tempora delectus,
             earum eos iure deleniti deserunt, optio nihil dolore laboriosam rerum? Molestiae non quos rerum amet.</p>
-        <button class="p-3 m-5 text-white colorButton">Search Courses</button>
-        <button class="p-3 textButton">Apply for University</button>
+        <button class="p-3 m-5 text-white colorButton"><font-awesome-icon class="mx-2"
+                :icon="['fas', 'magnifying-glass']" /> Search
+            Courses</button>
+        <button class="p-3  textButton"><font-awesome-icon class="mx-2" :icon="['fas', 'user-plus']"
+                style="color: #E56768;" />Apply
+            for University</button>
     </div>
 </template>
 

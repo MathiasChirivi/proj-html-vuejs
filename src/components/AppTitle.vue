@@ -20,7 +20,7 @@ export default {
                 <li v-for="link in links">
                     <a class="text-white text-decoration-none" :href="link.url">{{ link.text }}</a>
                 </li>
-                <button>VIEW COURSES</button>
+                <button class="text-white viewCouses">VIEW COURSES</button>
             </ul>
         </div>
     </div>
@@ -48,5 +48,12 @@ ul {
 
 div img {
     width: 40%;
+}
+
+.viewCouses {
+    background-color: #E9D758;
+    border: 2px solid #E9D758;
+    border-radius: 30px;
+    padding: 10px;
 }
 </style>

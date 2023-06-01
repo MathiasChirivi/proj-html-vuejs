@@ -51,7 +51,9 @@ export default {
                                 natural
                                 lead-in to
                                 additional content. This content is a little bit longer.</p>
-                            <a href="#" class="btnFind  text-center">Find More</a>
+                            <a href="#" class="btnFind  text-center"><font-awesome-icon class="mx-2"
+                                    :icon="['fas', 'plus']" />Find
+                                More</a>
                         </div>
                     </div>
                 </div>
@@ -67,7 +69,9 @@ export default {
                                 sed
                                 do eiusmod
                                 tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <a href="#" class="btnFind  text-center">Find More</a>
+                            <a href="#" class="btnFind  text-center"><font-awesome-icon class="mx-2"
+                                    :icon="['fas', 'plus']" />Find
+                                More</a>
                         </div>
                     </div>
                 </div>
@@ -83,7 +87,9 @@ export default {
                                 natural
                                 lead-in to
                                 additional content. This content is a little bit longer.</p>
-                            <a href="#" class="btnFind  text-center">Find More</a>
+                            <a href="#" class="btnFind  text-center"><font-awesome-icon class="mx-2"
+                                    :icon="['fas', 'plus']" />Find
+                                More</a>
                         </div>
                     </div>
                 </div>

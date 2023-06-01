@@ -24,7 +24,8 @@ export default {
                                 <p class="m-0">Price: $21.00</p>
                             </div>
                         </div>
-                        <button class="mt-3 p-2 buttonCards">View Course</button>
+                        <button class="mt-3 p-2 buttonCards"><font-awesome-icon class="mx-2" :icon="['fas', 'eye']" />View
+                            Course</button>
                     </div>
                 </div>
             </div>
@@ -43,7 +44,8 @@ export default {
                                 <p class="m-0">Price: $21.00</p>
                             </div>
                         </div>
-                        <button class="mt-3 p-2 buttonCards">View Course</button>
+                        <button class="mt-3 p-2 buttonCards"><font-awesome-icon class="mx-2" :icon="['fas', 'eye']" />View
+                            Course</button>
                     </div>
                 </div>
             </div>
@@ -62,7 +64,8 @@ export default {
                                 <p class="m-0">Price: $21.00</p>
                             </div>
                         </div>
-                        <button class="mt-3 p-2 buttonCards">View Course</button>
+                        <button class="mt-3 p-2 buttonCards"><font-awesome-icon class="mx-2" :icon="['fas', 'eye']" />View
+                            Course</button>
                     </div>
                 </div>
             </div>
@@ -81,7 +84,8 @@ export default {
                                 <p class="m-0">Price: $21.00</p>
                             </div>
                         </div>
-                        <button class="mt-3 p-2 buttonCards">View Course</button>
+                        <button class="mt-3 p-2 buttonCards"><font-awesome-icon class="mx-2" :icon="['fas', 'eye']" />View
+                            Course</button>
                     </div>
                 </div>
             </div>
