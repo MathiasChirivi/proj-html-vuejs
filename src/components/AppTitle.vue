@@ -17,8 +17,15 @@ export default {
                 <img src="../assets/img/theme_eduprime_logo.png" alt="">
             </div>
             <ul class="d-flex align-items-center justify-content-center gap-5 list-unstyled">
-                <li v-for="link in links">
-                    <a class="text-white text-decoration-none" :href="link.url">{{ link.text }}</a>
+                <li class="nav-item dropdown" v-for="link in links">
+                    <a class="text-white text-decoration-none nav-item dropdown nav-link dropdown-toggle"
+                        v-if="link.box.length > 1" data-bs-toggle="dropdown" aria-expanded="false" :href="link.url">
+                        {{ link.text }}
+                        <ul class="dropdown-menu">
+                            <li><a v-for="item in link.box" class="dropdown-item" href="#">{{ item }}</a></li>
+                        </ul>
+                    </a>
+                    <a v-else class="text-white text-decoration-none" href="#">{{ link.text }}</a>
                 </li>
                 <button class="text-white viewCouses">VIEW COURSES</button>
             </ul>
@@ -38,7 +45,7 @@ export default {
 }
 
 .logo {
-    width: 400px;
+    width: 370px;
 }
 
 ul {
@@ -55,5 +62,16 @@ div img {
     border: 2px solid #E9D758;
     border-radius: 30px;
     padding: 10px;
+}
+
+.viewCouses:hover {
+    border: 2px solid white;
+    transition: 1s;
+    color: #E56768 !important;
+    background-color: white;
+}
+
+.vocBox {
+    color: white !important;
 }
 </style>

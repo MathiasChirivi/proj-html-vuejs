@@ -5,30 +5,37 @@ export const headerLink = reactive({
         {
             text: "Home",
             url: "#",
+            box: ['Low Faculty', 'Economy', 'Medicine', 'Computer Science', 'Graphic Design'],
         },
         {
             text: "Coureses",
             url: "#",
+            box: ['Low Faculty', 'Economy', 'Medicine', 'Computer Science', 'Graphic Design'],
         },
         {
             text: "About Us",
             url: "#",
+            box: false,
         },
         {
             text: "News",
             url: "#",
+            box: ['Low Faculty', 'Economy', 'Medicine', 'Computer Science', 'Graphic Design'],
         },
         {
             text: "Pages",
             url: "#",
+            box: ['Low Faculty', 'Economy', 'Medicine', 'Computer Science', 'Graphic Design'],
         },
         {
             text: "Contact",
             url: "#",
+            box: false,
         },
         {
             text: "Purchase",
             url: "#",
+            box: false,
         },
     ]
 })

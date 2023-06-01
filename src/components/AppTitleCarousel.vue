@@ -30,12 +30,11 @@ export default {
         <p class="text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem iste illum maxime? Facilis
             tempora delectus,
             earum eos iure deleniti deserunt, optio nihil dolore laboriosam rerum? Molestiae non quos rerum amet.</p>
-        <button class="p-3 m-5 text-white colorButton"><font-awesome-icon class="mx-2"
+        <button class="p-3 m-5 text-white text-center colorButton"><font-awesome-icon class="mx-2"
                 :icon="['fas', 'magnifying-glass']" /> Search
             Courses</button>
-        <button class="p-3  textButton"><font-awesome-icon class="mx-2" :icon="['fas', 'user-plus']"
-                style="color: #E56768;" />Apply
-            for University</button>
+        <button class="p-3 text-center textButton"><font-awesome-icon class="mx-2" :icon="['fas', 'user-plus']" />Apply for
+            University</button>
     </div>
 </template>
 
@@ -77,14 +76,26 @@ export default {
 .colorButton {
     background-color: #E9D758;
     border-radius: 30px;
-    border-color: #E9D758;
+    border: 0px;
+}
+
+.colorButton:hover {
+    transition: 1s;
+    background-color: white;
+    color: #E56768 !important;
+    border-radius: 30px;
     border: 0px;
 }
 
 .textButton {
     color: #E56768;
     border-radius: 30px;
-    border-color: #E56768;
     border: 0px;
+}
+
+.textButton:hover {
+    transition: 1s;
+    background-color: #E9D758;
+    color: white !important;
 }
 </style>

@@ -52,8 +52,7 @@ export default {
                                 lead-in to
                                 additional content. This content is a little bit longer.</p>
                             <a href="#" class="btnFind  text-center"><font-awesome-icon class="mx-2"
-                                    :icon="['fas', 'plus']" />Find
-                                More</a>
+                                    :icon="['fas', 'plus']" />Find More</a>
                         </div>
                     </div>
                 </div>
@@ -70,8 +69,7 @@ export default {
                                 do eiusmod
                                 tempor incididunt ut labore et dolore magna aliqua.</p>
                             <a href="#" class="btnFind  text-center"><font-awesome-icon class="mx-2"
-                                    :icon="['fas', 'plus']" />Find
-                                More</a>
+                                    :icon="['fas', 'plus']" />Find More</a>
                         </div>
                     </div>
                 </div>
@@ -88,8 +86,7 @@ export default {
                                 lead-in to
                                 additional content. This content is a little bit longer.</p>
                             <a href="#" class="btnFind  text-center"><font-awesome-icon class="mx-2"
-                                    :icon="['fas', 'plus']" />Find
-                                More</a>
+                                    :icon="['fas', 'plus']" />Find More</a>
                         </div>
                     </div>
                 </div>
@@ -184,7 +181,7 @@ a {
     border-radius: 35px;
     color: #FFFFFF;
     background-color: #E56768;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px 0px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px 0px;
 }
 
 .heightBody {
@@ -198,5 +195,11 @@ a {
     background-color: #E9D758;
     color: white;
     border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 20px 0px;
+}
+
+.buttonMargin:hover {
+    transition: 1s;
+    background-color: #E56768;
 }
 </style>

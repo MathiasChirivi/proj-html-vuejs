@@ -151,6 +151,11 @@ export default {
     width: 200px;
 }
 
+.buttonMain:hover {
+    transition: 1s;
+    background-color: #E9D758;
+}
+
 .left {
     width: calc(100% / 2);
     height: 500px;
