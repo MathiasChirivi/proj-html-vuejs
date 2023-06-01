@@ -39,7 +39,7 @@ export default {
                 :class="item.display" @click="showImage(index)">
                 <img class="imgPath" :src="item.imgPath">
                 <h5 class="colorh5 mt-3">{{ item.text }}</h5>
-                <i v-if="item.display == 'active'" class="fas fa-sort-down fa-3x"></i>
+                <i v-if="item.display == 'active'"></i>
             </div>
         </div>
     </div>
@@ -48,7 +48,8 @@ export default {
             <img :src="imagePath[clickedImage].imgPathBig">
         </div>
         <div class="right marginContainerBottom d-flex flex-column justify-content-center">
-            <p>{{ imagePath[clickedImage].text }}</p>
+            <h2 class="mb-5">{{ imagePath[clickedImage].text }}</h2>
+            <p class="mb-3">{{ imagePath[clickedImage].description }}</p>
             <button class=" buttonMain text-white">Read More</button>
         </div>
     </div>

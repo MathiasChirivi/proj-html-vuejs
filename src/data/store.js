@@ -46,30 +46,35 @@ export const Main = reactive({
             imgPathBig: "../src/assets/img/Gavel-Illustration-e1556884768193.png",
             imgPath: "../src/assets/img/Gavel-v2.png",
             text: "Low Faculty",
+            description: "Learning from world-leading academics and practitioners, you’ll not only receive an outstanding grounding in the theory of law, but you will be able to understand how those principles are applied in practice through a range of student-led activities and competitions.",
             display: 'active'
         },
         {
             imgPathBig: "../src/assets/img/Economy.png",
             imgPath: "../src/assets/img/Coins-tabs-v2.png",
             text: "Economy",
+            description: "Learning from world-leading academics and practitioners, you’ll not only receive an outstanding grounding in the theory of law, but you will be able to understand how those principles are applied in practice through a range of student-led activities and competitions.",
             display: 'none'
         },
         {
             imgPathBig: "../src/assets/img/Medicine.png",
             imgPath: "../src/assets/img/Medicine-tabs-v2.png",
             text: "Medicine",
+            description: "Learning from world-leading academics and practitioners, you’ll not only receive an outstanding grounding in the theory of law, but you will be able to understand how those principles are applied in practice through a range of student-led activities and competitions.",
             display: 'none'
         },
         {
             imgPathBig: "../src/assets/img/Computer-Science.png",
             imgPath: "../src/assets/img/Computer-tabs-v2.png",
             text: "Computer Science",
+            description: "Learning from world-leading academics and practitioners, you’ll not only receive an outstanding grounding in the theory of law, but you will be able to understand how those principles are applied in practice through a range of student-led activities and competitions.",
             display: 'none'
         },
         {
             imgPathBig: "../src/assets/img/Graphic-Design.png",
             imgPath: "../src/assets/img/Palette-tabs-v2.png",
             text: "Graphic Design",
+            description: "Learning from world-leading academics and practitioners, you’ll not only receive an outstanding grounding in the theory of law, but you will be able to understand how those principles are applied in practice through a range of student-led activities and competitions.",
             display: 'none'
         }
     ]
