@@ -107,12 +107,12 @@ export default {
 }
 
 .positionImg {
-    top: -119px;
+    top: -108px;
     width: 100%;
 }
 
 .positionImg1 {
-    bottom: -118px;
+    bottom: -109px;
     width: 100%;
 }
 

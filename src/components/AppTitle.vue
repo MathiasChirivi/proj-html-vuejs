@@ -38,7 +38,7 @@ export default {
 }
 
 .logo {
-    width: 450px;
+    width: 400px;
 }
 
 ul {
@@ -47,7 +47,7 @@ ul {
 }
 
 div img {
-    width: 40%;
+    width: 50%;
 }
 
 .viewCouses {
