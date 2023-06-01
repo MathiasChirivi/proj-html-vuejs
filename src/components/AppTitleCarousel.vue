@@ -38,7 +38,9 @@ export default {
     </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use '../styles/partials/variables.scss' as var;
+
 #carouselExampleSlidesOnly {
     margin-top: -120px;
 }
@@ -63,7 +65,7 @@ export default {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(218, 108, 110, 0.8);
+    background: var.$ColorRGBA;
     /* Colore dello sfondo con opacità */
 }
 
@@ -82,13 +84,13 @@ export default {
 .colorButton:hover {
     transition: 1s;
     background-color: white;
-    color: #E56768 !important;
+    color: var.$primaryColor !important;
     border-radius: 30px;
     border: 0px;
 }
 
 .textButton {
-    color: #E56768;
+    color: var.$primaryColor !important;
     border-radius: 30px;
     border: 0px;
 }

@@ -33,7 +33,9 @@ export default {
     </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use '../styles/partials/variables.scss' as var;
+
 .headerBg {
     background: #00000000;
     position: relative;
@@ -67,7 +69,7 @@ div img {
 .viewCouses:hover {
     border: 2px solid white;
     transition: 1s;
-    color: #E56768 !important;
+    color: var.$primaryColor !important;
     background-color: white;
 }
 

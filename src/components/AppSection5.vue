@@ -25,7 +25,9 @@ export default {
     </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use '../styles/partials/variables.scss' as var;
+
 .containerMain {
     margin: 0 auto;
     margin-top: 100px;

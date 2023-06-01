@@ -117,7 +117,9 @@ export default {
     </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use '../styles/partials/variables.scss' as var;
+
 .containerMain {
     margin: 0 auto;
     margin-top: 100px;
@@ -139,7 +141,7 @@ export default {
     color: white;
     width: 150px;
     border: 0;
-    background-color: #E56768;
+    background-color: var.$primaryColor;
     border-radius: 30px;
 }
 
@@ -147,7 +149,7 @@ export default {
     padding: 13px;
     border-radius: 30px;
     border: 0px;
-    background-color: #E56768;
+    background-color: var.$primaryColor;
     width: 200px;
 }
 

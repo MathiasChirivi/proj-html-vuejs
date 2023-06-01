@@ -97,19 +97,21 @@ export default {
     </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use '../styles/partials/variables.scss' as var;
+
 .headerBg {
-    background-color: #E56768;
+    background-color: var.$primaryColor;
     padding: 150px 0;
 }
 
 .positionImg {
-    top: -108px;
+    top: -120px;
     width: 100%;
 }
 
 .positionImg1 {
-    bottom: -109px;
+    bottom: -119px;
     width: 100%;
 }
 
@@ -180,7 +182,7 @@ a {
     font-size: 14px;
     border-radius: 35px;
     color: #FFFFFF;
-    background-color: #E56768;
+    background-color: var.$primaryColor;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px 0px;
 }
 
@@ -191,7 +193,7 @@ a {
 .buttonMargin {
     width: 170px;
     margin-top: 130px;
-    border: #E56768;
+    border: var.$primaryColor;
     background-color: #E9D758;
     color: white;
     border-radius: 30px;
@@ -200,6 +202,6 @@ a {
 
 .buttonMargin:hover {
     transition: 1s;
-    background-color: #E56768;
+    background-color: var.$primaryColor;
 }
 </style>

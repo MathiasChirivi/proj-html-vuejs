@@ -30,7 +30,7 @@ export default {
 </script>
 
 <template>
-    <div class="mt-5 container containerMain d-flex flex-column align-items-center marginContainer">
+    <div class=" container containerMain d-flex flex-column align-items-center marginContainer">
         <h2 class="mb-2">Faculties available at EduPrime</h2>
         <p class="text-center textSecondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis recusandae
             ipsam quidem sapiente necessitatibus!</p>
@@ -54,7 +54,9 @@ export default {
     </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use '../styles/partials/variables.scss' as var;
+
 .containerMain {
     margin: 0 auto;
 }
@@ -89,7 +91,7 @@ export default {
     padding: 13px;
     border-radius: 30px;
     border: 0px;
-    background-color: #E56768;
+    background-color: var.$primaryColor;
     width: 200px;
 }
 

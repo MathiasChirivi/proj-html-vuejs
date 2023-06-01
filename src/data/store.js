@@ -67,7 +67,7 @@ export const Main = reactive({
             display: 'none'
         },
         {
-            imgPathBig: "../src/assets/img/Gavel-Illustration-e1556884768193.png",
+            imgPathBig: "../src/assets/img/Graphic-Design.png",
             imgPath: "../src/assets/img/Palette-tabs-v2.png",
             text: "Graphic Design",
             display: 'none'

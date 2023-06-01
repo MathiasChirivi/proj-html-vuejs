@@ -21,9 +21,11 @@ export default {
     </div>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+@use '../styles/partials/variables.scss' as var;
+
 .headerBg {
-    background-color: #E56768;
+    background-color: var.$primaryColor;
 }
 
 .containerMain {
