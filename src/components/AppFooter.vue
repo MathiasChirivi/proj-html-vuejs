@@ -25,7 +25,7 @@ export default {
                         courses, secondary schools etc.</p>
                     <div class="mt-5">
                         <a href="#" class="fontAwe">
-                            <font-awesome-icon :icon="['fab', 'facebook']" />
+                            <font-awesome-icon class="color-white" :icon="['fab', 'facebook']" />
                         </a>
                         <a href="#" class="fontAwe">
                             <font-awesome-icon :icon="['fab', 'twitter']" />
@@ -84,6 +84,7 @@ export default {
                                 <span>FITNESS</span>
                             </a>
                         </div>
+                        <p class="marginLeft">ModelTheme.All rights reserved</p>
                     </div>
                 </div>
             </div>
@@ -155,7 +156,13 @@ export default {
 }
 
 a {
-    text-decoration: none;
+    color: #FFFFFF;
+    text-decoration: none !important;
+}
+
+.marginLeft {
+    color: #E9D758;
+    margin-left: 190px;
 }
 
 span {

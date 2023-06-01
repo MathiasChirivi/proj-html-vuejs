@@ -3,3 +3,22 @@
 * {
     font-family: 'Fredoka', sans-serif;
 }
+
+::-webkit-scrollbar {
+    width: .6rem;
+    height: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+    margin: .4rem 0;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 30px;
+    background: #20ad96;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #20ad96;
+}

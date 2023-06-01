@@ -31,6 +31,11 @@ export default {
             </ul>
         </div>
     </div>
+    <div class="leftBox">
+        <font-awesome-icon :icon="['fas', 'cart-shopping']" />
+        <font-awesome-icon :icon="['fas', 'book-open']" />
+        <font-awesome-icon :icon="['fas', 'circle-info']" />
+    </div>
 </template>
 
 <style lang="scss" scoped>
@@ -75,5 +80,22 @@ div img {
 
 .vocBox {
     color: white !important;
+}
+
+.leftBox {
+    height: 150px;
+    width: 60px;
+    border-radius: 0 5px 5px 0;
+    background-color: #E9D758;
+    box-shadow: 2px 2px 3px grey;
+    position: fixed;
+    top: 30%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 2;
 }
 </style>

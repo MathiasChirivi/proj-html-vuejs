@@ -131,6 +131,7 @@ export default {
 
 .widthCard {
     width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px 0px;
 }
 
 .widthCard img {
