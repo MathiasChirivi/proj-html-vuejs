@@ -38,7 +38,7 @@ export default {
             <div v-for="(item, index) in imagePath" class="p-3 d-flex flex-column align-items-center border"
                 :class="item.display" @click="showImage(index)">
                 <img class="imgPath" :src="item.imgPath">
-                <h3>{{ item.text }}</h3>
+                <h5 class="colorh5 mt-3">{{ item.text }}</h5>
                 <i v-if="item.display == 'active'" class="fas fa-sort-down fa-3x"></i>
             </div>
         </div>
@@ -85,6 +85,10 @@ export default {
 .left img {
     height: 80%;
     width: 80%;
+}
+
+.colorh5 {
+    color: var.$primaryColor
 }
 
 .buttonMain {
