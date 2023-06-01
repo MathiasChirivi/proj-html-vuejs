@@ -2,38 +2,54 @@
 import { Main } from '../data/store'
 export default {
     name: "AppSection1",
+    data() {
+        return {
+            clickedImage: 0,
+        }
+    },
     computed: {
         imagePath() {
             return Main.imagePath;
+        }
+    },
+    methods: {
+        showImage(index) {
+            this.clickedImage = index;
+            for (let i = 0; i < this.imagePath.length; i++) {
+                if (i == index) {
+                    this.imagePath[i].display = 'active';
+                }
+                else {
+                    this.imagePath[i].display = 'none';
+                }
+            }
+            console.log("img ", this.imagePath[index].imgPath)
         }
     }
 }
 </script>
 
 <template>
-    <div class=" container containerMain d-flex flex-column align-items-center marginContainer">
+    <div class="mt-5 container containerMain d-flex flex-column align-items-center marginContainer">
         <h2 class="mb-2">Faculties available at EduPrime</h2>
         <p class="text-center textSecondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis recusandae
             ipsam quidem sapiente necessitatibus!</p>
-        <ul class="list-unstyled d-flex justify-content-center mt-4 mb-5 ">
-            <li class="p-3 d-flex flex-column align-items-center border" v-for="item in imagePath" :key="item.text">
-                <img class="mb-3" :src="item.imgPath" :alt="item.text">
-                <span class="text-center">{{ item.text }}</span>
-            </li>
-        </ul>
-        <div class="container containerMain d-flex mt-4">
-            <div class="left d-flex justify-content-center">
-                <img src="../assets/img/Gavel-Illustration-e1556884768193.png" alt="">
+        <div class="list-unstyled d-flex justify-content-center mt-5">
+            <div v-for="(item, index) in imagePath" class="p-3 d-flex flex-column align-items-center border"
+                :class="item.display" @click="showImage(index)">
+                <img class="imgPath" :src="item.imgPath">
+                <h3>{{ item.text }}</h3>
+                <i v-if="item.display == 'active'" class="fas fa-sort-down fa-3x"></i>
             </div>
-            <div class="right d-flex flex-column justify-content-center">
-                <h2 class="mb-5">Law Faculty</h2>
-                <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque atque temporibus sit.
-                    Voluptates
-                    minus
-                    cupiditate nemo facilis debitis ea, doloremque ut, saepe autem quaerat, eum consequuntur sit aperiam
-                    consequatur tempora?</p>
-                <button class=" buttonMain text-white">Read More</button>
-            </div>
+        </div>
+    </div>
+    <div class="container containerMain d-flex mt-1">
+        <div class="left d-flex justify-content-center">
+            <img :src="imagePath[clickedImage].imgPathBig">
+        </div>
+        <div class="right marginContainerBottom d-flex flex-column justify-content-center">
+            <p>{{ imagePath[clickedImage].text }}</p>
+            <button class=" buttonMain text-white">Read More</button>
         </div>
     </div>
 </template>
@@ -44,14 +60,18 @@ export default {
 }
 
 .marginContainer {
-    margin-bottom: 220px;
+    margin-bottom: 100px;
+}
+
+.marginContainerBottom {
+    margin-bottom: 200px;
 }
 
 .textSecondary {
     width: 500px;
 }
 
-li img {
+.imgPath {
     width: 50%;
 }
 
@@ -61,7 +81,8 @@ li img {
 }
 
 .left img {
-    width: 100%;
+    height: 80%;
+    width: 80%;
 }
 
 .buttonMain {
@@ -75,5 +96,9 @@ li img {
 .right {
     width: calc(100% / 2);
     height: 500px;
+}
+
+.active {
+    background-color: lightgrey;
 }
 </style>

@@ -43,24 +43,34 @@ export const headerLink = reactive({
 export const Main = reactive({
     imagePath: [
         {
+            imgPathBig: "../src/assets/img/Gavel-Illustration-e1556884768193.png",
             imgPath: "../src/assets/img/Gavel-v2.png",
             text: "Low Faculty",
+            display: 'active'
         },
         {
+            imgPathBig: "../src/assets/img/Economy.png",
             imgPath: "../src/assets/img/Coins-tabs-v2.png",
             text: "Economy",
+            display: 'none'
         },
         {
+            imgPathBig: "../src/assets/img/Medicine.png",
             imgPath: "../src/assets/img/Medicine-tabs-v2.png",
             text: "Medicine",
+            display: 'none'
         },
         {
+            imgPathBig: "../src/assets/img/Computer-Science.png",
             imgPath: "../src/assets/img/Computer-tabs-v2.png",
             text: "Computer Science",
+            display: 'none'
         },
         {
+            imgPathBig: "../src/assets/img/Gavel-Illustration-e1556884768193.png",
             imgPath: "../src/assets/img/Palette-tabs-v2.png",
             text: "Graphic Design",
+            display: 'none'
         }
     ]
 })
