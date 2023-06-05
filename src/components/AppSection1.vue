@@ -110,7 +110,7 @@ export default {
 }
 
 .active {
-    background-color: lightgrey;
+    background-color: lightgray;
 }
 
 .positionImg {

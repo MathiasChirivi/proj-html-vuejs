@@ -58,7 +58,7 @@ export default {
 }
 
 .logo {
-    width: 370px;
+    width: 365px;
 }
 
 ul {
