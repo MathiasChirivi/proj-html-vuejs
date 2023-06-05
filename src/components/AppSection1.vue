@@ -30,28 +30,32 @@ export default {
 </script>
 
 <template>
-    <div class=" container containerMain d-flex flex-column align-items-center marginContainer">
-        <h2 class="mb-2">Faculties available at EduPrime</h2>
-        <p class="text-center textSecondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis recusandae
-            ipsam quidem sapiente necessitatibus!</p>
-        <div class="list-unstyled d-flex justify-content-center mt-5">
-            <div v-for="(item, index) in imagePath" class="p-3 d-flex flex-column align-items-center border"
-                :class="item.display" @click="showImage(index)">
-                <img class="imgPath" :src="item.imgPath">
-                <h5 class="colorh5 mt-3">{{ item.text }}</h5>
-                <i v-if="item.display == 'active'"></i>
+    <div class="position-relative">
+        <div class=" container containerMain d-flex flex-column align-items-center marginContainer">
+            <h2 class="mb-2">Faculties available at EduPrime</h2>
+            <p class="text-center textSecondary">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+                recusandae
+                ipsam quidem sapiente necessitatibus!</p>
+            <div class="list-unstyled d-flex justify-content-center mt-5">
+                <div v-for="(item, index) in imagePath" class="p-3 d-flex flex-column align-items-center border"
+                    :class="item.display" @click="showImage(index)">
+                    <img class="imgPath" :src="item.imgPath">
+                    <h5 class="colorh5 mt-3">{{ item.text }}</h5>
+                    <i v-if="item.display == 'active'"></i>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container containerMain d-flex mt-1">
-        <div class="left d-flex justify-content-center">
-            <img :src="imagePath[clickedImage].imgPathBig">
+        <div class="container containerMain d-flex mt-1">
+            <div class="left d-flex justify-content-center">
+                <img :src="imagePath[clickedImage].imgPathBig">
+            </div>
+            <div class="right marginContainerBottom d-flex flex-column justify-content-center">
+                <h2 class="mb-5">{{ imagePath[clickedImage].text }}</h2>
+                <p class="mb-3">{{ imagePath[clickedImage].description }}</p>
+                <button class=" buttonMain text-white">Read More</button>
+            </div>
         </div>
-        <div class="right marginContainerBottom d-flex flex-column justify-content-center">
-            <h2 class="mb-5">{{ imagePath[clickedImage].text }}</h2>
-            <p class="mb-3">{{ imagePath[clickedImage].description }}</p>
-            <button class=" buttonMain text-white">Read More</button>
-        </div>
+        <img class="position-absolute w-100 positionImg" src="../assets/svg/svg-0.svg" alt="">
     </div>
 </template>
 
@@ -107,5 +111,10 @@ export default {
 
 .active {
     background-color: lightgrey;
+}
+
+.positionImg {
+    bottom: -1px;
+    left: 0;
 }
 </style>

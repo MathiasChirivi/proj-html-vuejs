@@ -50,8 +50,10 @@ export default {
 }
 
 .positionImg {
-    top: 600px;
+    left: 0;
     width: 100%;
+    bottom: 0px;
+
 }
 
 .containerCarousel {

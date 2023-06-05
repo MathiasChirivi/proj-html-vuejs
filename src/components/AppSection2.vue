@@ -6,7 +6,7 @@ export default {
 
 <template>
     <div class="headerBg position-relative">
-        <img class="position-absolute positionImg" src="../assets/svg/svg-0.svg" alt="">
+        <!-- <img class="position-absolute positionImg" src="../assets/svg/svg-0.svg" alt=""> -->
         <div class="container containerMain d-flex flex-column align-items-center">
             <img class="imgClockCalendar mb-4" src="../assets/img/Clock-and-Bell.png" alt="">
             <h2 class="bg-danger mt-4 mb-5 text-white">University Year</h2>
@@ -93,7 +93,7 @@ export default {
             </div>
             <button class="buttonMargin p-3">View All Events</button>
         </div>
-        <img class="position-absolute positionImg1" src="../assets/svg/svg-1.svg" alt="">
+        <!-- <img class="position-absolute positionImg1" src="../assets/svg/svg-1.svg" alt=""> -->
     </div>
 </template>
 
@@ -105,15 +105,15 @@ export default {
     padding: 150px 0;
 }
 
-.positionImg {
-    top: -120px;
-    width: 100%;
-}
+// .positionImg {
+//     width: 100%;
+//     top: 2px;
+// }
 
-.positionImg1 {
-    bottom: -119px;
-    width: 100%;
-}
+// .positionImg1 {
+//     top: 3px;
+//     width: 100%;
+// }
 
 .containerMain {
     margin: 0 auto;
