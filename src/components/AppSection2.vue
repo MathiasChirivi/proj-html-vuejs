@@ -174,6 +174,11 @@ a {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 0px 20px 0px;
 }
 
+.btnFind:hover {
+    transition: 1s;
+    background-color: #E9D758;
+}
+
 .heightBody {
     height: 180px;
 }
