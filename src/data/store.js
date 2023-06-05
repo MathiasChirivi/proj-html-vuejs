@@ -80,6 +80,36 @@ export const Main = reactive({
     ]
 })
 
+
+export const MainSection3 = reactive({
+    CardCourse: [
+        {
+            img: "../src/assets/img/Decisions-icon.png",
+            TitleCourse: "Make Better Decision",
+            teacher: "James Colins",
+            price: "$21.00",
+        },
+        {
+            img: "../src/assets/img/Speaker-icon.png",
+            TitleCourse: "Make Better Decision",
+            teacher: "James Colins",
+            price: "Free"
+        },
+        {
+            img: "../src/assets/img/Network-icon.png",
+            TitleCourse: "Make Better Decision",
+            teacher: "James Colins",
+            price: "Free"
+        },
+        {
+            img: "../src/assets/img/Brand-icon.png",
+            TitleCourse: "Make Better Decision",
+            teacher: "James Colins",
+            price: "Free"
+        },
+    ]
+})
+
 export const MainSection5 = reactive({
     imagePartners: [
         {
