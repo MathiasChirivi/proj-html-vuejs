@@ -80,6 +80,23 @@ export const Main = reactive({
     ]
 })
 
+export const MainSection2 = reactive({
+    CoachingEvent: [
+        {
+            date: "20 May 21:30 pm",
+            description: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+        },
+        {
+            date: "20 May 21:30 pm",
+            description: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+        },
+        {
+            date: "20 May 21:30 pm",
+            description: "This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.",
+        },
+    ]
+})
+
 
 export const MainSection3 = reactive({
     CardCourse: [

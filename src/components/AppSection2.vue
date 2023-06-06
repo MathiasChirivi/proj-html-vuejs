@@ -1,6 +1,12 @@
 <script >
+import { MainSection2 } from '../data/store';
 export default {
     name: "AppSection2",
+    computed: {
+        CoachingEvent() {
+            return MainSection2.CoachingEvent;
+        }
+    }
 }
 </script>
 <!-- in this section we see the various events through cards and the graph that explains some steps -->
@@ -38,46 +44,15 @@ export default {
                 srcset="">
             <h2 class="text-white mb-5">Upcoming Events</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
+                <div class="col" v-for="event in CoachingEvent">
                     <div class="card h-100">
                         <div class="card-body">
                             <h3 class="card-title text-center">Coaching Session</h3>
                             <div class="d-flex align-items-center justify-content-center">
                                 <font-awesome-icon :icon="['fas', 'calendar-days']" />
-                                <p class="m-0 mx-2">20 May 21:30 PM</p>
+                                <p class="m-0 mx-2">{{ event.date }}</p>
                             </div>
-                            <p class="card-text text-center lh-sm">This is a longer card with supporting text below as a
-                                natural lead-in to additional content. This content is a little bit longer.</p>
-                            <a href="#" class="btnFind  text-center"><font-awesome-icon class="mx-2"
-                                    :icon="['fas', 'plus']" />Find More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col position-relative">
-                    <div class="card h-100">
-                        <div class="card-body">
-                            <h3 class="card-title text-center">Coaching Session</h3>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <font-awesome-icon :icon="['fas', 'calendar-days']" />
-                                <p class="m-0 mx-2">20 May 21:30 PM</p>
-                            </div>
-                            <p class="card-text text-center lh-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                            <a href="#" class="btnFind  text-center"><font-awesome-icon class="mx-2"
-                                    :icon="['fas', 'plus']" />Find More</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card heightBody">
-                        <div class="card-body">
-                            <h3 class="card-title text-center">Coaching Session</h3>
-                            <div class="d-flex align-items-center justify-content-center">
-                                <font-awesome-icon :icon="['fas', 'calendar-days']" />
-                                <p class="m-0 mx-2">20 May 21:30 PM</p>
-                            </div>
-                            <p class="card-text text-center lh-sm">This is a longer card with supporting text below as a
-                                natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text text-center lh-sm">{{ event.description }}</p>
                             <a href="#" class="btnFind  text-center"><font-awesome-icon class="mx-2"
                                     :icon="['fas', 'plus']" />Find More</a>
                         </div>
