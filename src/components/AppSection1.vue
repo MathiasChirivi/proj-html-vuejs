@@ -7,11 +7,13 @@ export default {
             clickedImage: 0,
         }
     },
+    // We connect the data.js to pass the various strings (img, description...)
     computed: {
         imagePath() {
             return Main.imagePath;
         }
     },
+    //method that changes the displayed image on click
     methods: {
         showImage(index) {
             this.clickedImage = index;
@@ -29,6 +31,8 @@ export default {
 }
 </script>
 
+<!-- section where we see the data passed from the store.js
+     with the relative v-if to see the activated Image -->
 <template>
     <div class="position-relative">
         <div class=" container containerMain d-flex flex-column align-items-center marginContainer">
@@ -59,6 +63,7 @@ export default {
     </div>
 </template>
 
+<!-- Add SCSS for the primary color and varius CSS  -->
 <style lang="scss" scoped>
 @use '../styles/partials/variables.scss' as var;
 

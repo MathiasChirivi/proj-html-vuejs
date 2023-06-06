@@ -3,7 +3,8 @@ export default {
     name: "AppTitleCarousel",
 }
 </script>
-
+<!-- In this section we add the carousel via bootstrap,
+     in which autoplay is set and we add various text with buttons -->
 <template>
     <div id="carouselExampleSlidesOnly" class=" position-relative carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -38,6 +39,7 @@ export default {
     </div>
 </template>
 
+<!-- Add SCSS for the primary color and varius CSS  -->
 <style lang="scss" scoped>
 @use '../styles/partials/variables.scss' as var;
 

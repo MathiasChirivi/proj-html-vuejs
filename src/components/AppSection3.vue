@@ -3,6 +3,7 @@ import { MainSection3 } from '../data/store'
 export default {
     name: "AppSection3",
     computed: {
+        // We connect the data.js to pass the various strings (img, TitleCourse,teacher...)
         CardCourse() {
             return MainSection3.CardCourse;
         }
@@ -11,6 +12,8 @@ export default {
 }
 </script>
 
+<!-- section where we see the data passed from the store.js
+     with the relative v-for to see the various strings for the cards with the various descption and button -->
 <template>
     <div class="position-relative">
         <img class="position-absolute positionImg1" src="../assets/svg/svg-1.svg" alt="">
@@ -38,7 +41,7 @@ export default {
                         </div>
                     </div>
                 </div>
-
+                <!-- we divide the container into two parts, one for the image and the other for the description -->
             </div>
             <div class="container containerMainAfter d-flex ">
                 <div class="left d-flex flex-column justify-content-center">
@@ -68,6 +71,7 @@ export default {
     </div>
 </template>
 
+<!-- Add SCSS for the primary color and varius CSS  -->
 <style lang="scss" scoped>
 @use '../styles/partials/variables.scss' as var;
 

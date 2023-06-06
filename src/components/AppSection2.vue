@@ -3,7 +3,7 @@ export default {
     name: "AppSection2",
 }
 </script>
-
+<!-- in this section we see the various events through cards and the graph that explains some steps -->
 <template>
     <div class="headerBg position-relative">
         <div class="container containerMain d-flex flex-column align-items-center">
@@ -47,9 +47,7 @@ export default {
                                 <p class="m-0 mx-2">20 May 21:30 PM</p>
                             </div>
                             <p class="card-text text-center lh-sm">This is a longer card with supporting text below as a
-                                natural
-                                lead-in to
-                                additional content. This content is a little bit longer.</p>
+                                natural lead-in to additional content. This content is a little bit longer.</p>
                             <a href="#" class="btnFind  text-center"><font-awesome-icon class="mx-2"
                                     :icon="['fas', 'plus']" />Find More</a>
                         </div>
@@ -64,9 +62,7 @@ export default {
                                 <p class="m-0 mx-2">20 May 21:30 PM</p>
                             </div>
                             <p class="card-text text-center lh-sm">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                sed
-                                do eiusmod
-                                tempor incididunt ut labore et dolore magna aliqua.</p>
+                                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                             <a href="#" class="btnFind  text-center"><font-awesome-icon class="mx-2"
                                     :icon="['fas', 'plus']" />Find More</a>
                         </div>
@@ -81,9 +77,7 @@ export default {
                                 <p class="m-0 mx-2">20 May 21:30 PM</p>
                             </div>
                             <p class="card-text text-center lh-sm">This is a longer card with supporting text below as a
-                                natural
-                                lead-in to
-                                additional content. This content is a little bit longer.</p>
+                                natural lead-in to additional content. This content is a little bit longer.</p>
                             <a href="#" class="btnFind  text-center"><font-awesome-icon class="mx-2"
                                     :icon="['fas', 'plus']" />Find More</a>
                         </div>
@@ -95,6 +89,7 @@ export default {
     </div>
 </template>
 
+<!-- Add SCSS for the primary color and varius CSS  -->
 <style lang="scss" scoped>
 @use '../styles/partials/variables.scss' as var;
 

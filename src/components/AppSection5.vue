@@ -3,13 +3,15 @@ import { MainSection5 } from '../data/store'
 export default {
     name: "AppSection5",
     computed: {
+        // We connect the data.js to pass the various strings (img...)
         imagePartners() {
             return MainSection5.imagePartners;
         }
     }
 }
 </script>
-
+<!-- in this section the last part of the Main instead, we add the various partners,
+     and in this case they have an opacity and when the mouse is passed the desired partner lights up -->
 <template>
     <div class=" container containerMain">
         <div class="d-flex flex-column justify-content-center align-items-center">
@@ -25,6 +27,7 @@ export default {
     </div>
 </template>
 
+<!-- Add SCSS for the primary color and varius CSS  -->
 <style lang="scss" scoped>
 @use '../styles/partials/variables.scss' as var;
 

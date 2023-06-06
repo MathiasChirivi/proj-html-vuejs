@@ -4,6 +4,7 @@ export default {
 }
 </script>
 
+<!-- in this section there is an input and a button for sending the user's email -->
 <template>
     <div class="headerBg ">
         <div class=" container containerMain">
@@ -21,6 +22,7 @@ export default {
     </div>
 </template>
 
+<!-- Add SCSS for the primary color and varius CSS  -->
 <style lang="scss" scoped>
 @use '../styles/partials/variables.scss' as var;
 

@@ -4,6 +4,7 @@ export default {
 }
 </script>
 
+<!-- In this section, we start with the Main with various text and image -->
 <template>
     <div class="container containerMain d-flex">
         <div class="left d-flex flex-column justify-content-center">

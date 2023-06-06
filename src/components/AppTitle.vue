@@ -10,6 +10,8 @@ export default {
 }
 </script>
 
+<!-- In this section we add the menu items through the data.js with the various style
+     and lu two relative boxes fixed on both sides  -->
 <template>
     <div id="idCarousel">
         <div class="headerBg">
@@ -32,11 +34,13 @@ export default {
                 </ul>
             </div>
         </div>
+        <!-- Left Box with position fixed  -->
         <div class="leftBox">
             <font-awesome-icon :icon="['fas', 'cart-shopping']" />
             <font-awesome-icon :icon="['fas', 'book-open']" />
             <font-awesome-icon :icon="['fas', 'circle-info']" />
         </div>
+        <!-- Right Box with position fixed  -->
         <div class="rightBox">
             <a class="text-decoration-none text-black" href="#idCarousel"><font-awesome-icon
                     :icon="['fas', 'chevron-up']" /></a>
@@ -44,6 +48,7 @@ export default {
     </div>
 </template>
 
+<!-- Add SCSS for the primary color and varius CSS -->
 <style lang="scss" scoped>
 @use '../styles/partials/variables.scss' as var;
 

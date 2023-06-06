@@ -4,9 +4,11 @@ import { FooterGet } from '../data/store'
 export default {
     name: "AppFooter",
     computed: {
+        // We connect the data.js to pass the various strings (text, voices, link...)
         voices() {
             return FooterGet.voices;
         },
+        // We connect the data.js to pass the various strings (voices, voicesText, link...)
         voicesText() {
             return FooterGet.voicesText;
         }
@@ -14,6 +16,8 @@ export default {
 }
 </script>
 
+<!-- In the Footer I have divided into the various cols with their description
+     inside whether it is a button or the various items or an input with the button -->
 <template>
     <div class="headerBg ">
         <div class="container-fluid containerMain">
@@ -104,7 +108,7 @@ export default {
         </div>
     </div>
 </template>
-
+<!-- Add SCSS for the primary color and varius CSS  -->
 <style lang="scss" scoped>
 @use '../styles/partials/variables.scss' as var;
 
