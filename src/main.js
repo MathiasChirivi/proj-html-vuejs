@@ -11,6 +11,7 @@ import { faCartShopping } from '@fortawesome/free-solid-svg-icons';
 import { faCircleInfo } from '@fortawesome/free-solid-svg-icons';
 import { faBookOpen } from '@fortawesome/free-solid-svg-icons';
 import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import { faUserPlus } from '@fortawesome/free-solid-svg-icons';
 import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import { faCalendarDays } from '@fortawesome/free-solid-svg-icons'
@@ -27,6 +28,7 @@ library.add(faBookOpen)
 library.add(faCircleInfo)
 library.add(faCartShopping)
 library.add(faChevronUp)
+library.add(faCaretDown)
 library.add(faUserPlus)
 library.add(faMagnifyingGlass)
 library.add(faCalendarDays)
