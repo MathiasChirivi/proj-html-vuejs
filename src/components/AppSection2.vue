@@ -45,8 +45,8 @@ export default {
             <h2 class="text-white mb-5">Upcoming Events</h2>
             <div class="row row-cols-1 row-cols-md-3 g-4">
                 <div class="col" v-for="event in CoachingEvent">
-                    <div class="card h-100">
-                        <div class="card-body">
+                    <div class="card">
+                        <div class="card-body heightBody">
                             <h3 class="card-title text-center">Coaching Session</h3>
                             <div class="d-flex align-items-center justify-content-center">
                                 <font-awesome-icon :icon="['fas', 'calendar-days']" />
